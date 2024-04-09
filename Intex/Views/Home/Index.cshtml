@@ -1,42 +1,167 @@
 ﻿@{
-    ViewBag.Title = "AuroraBrix";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Home Page";
 }
 
 <div class="container">
-    <header>
-        <nav class="navbar">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">AuroraBrix</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Login/Sign up</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <aside class="filter-panel">
-        <h3>Date Released</h3>
-        <select>
-            <option>Newest</option>
-            <!-- Other options here -->
-        </select>
-        <!-- Add more filters like category, number of parts, price, color etc. -->
-    </aside>
-
-    <section class="product-section">
-        <h2>Popular Items</h2>
-        <div class="product-grid">
-            <!-- Repeat this block for each product -->
-            <div class="product">
-                <img src="path_to_ferrari_image.jpg" alt="Ferrari F1 Racer">
-                <h3>Ferrari F1 Racer 1:8</h3>
-                <p>$65</p>
-                <button>Add to Cart</button>
-            </div>
-            <!-- ... other products ... -->
+    <div class="filter-section">
+        <h4>Filter</h4>
+        <div class="form-group">
+            <select>
+                <option value="">Popular</option>
+                <option value="">Top 5</option>
+                <option value="">Newest</option>
+                <option value="">Oldest</option>
+                <!-- Add more options -->
+            </select>
         </div>
-    </section>
+
+        <h4>Category</h4>
+        <div class="form-group">
+            <label><input type="checkbox"> Star Wars</label>
+            <label><input type="checkbox"> DC</label>
+            <label><input type="checkbox"> Harry Potter</label>
+            <label><input type="checkbox"> Technic</label>
+            <label><input type="checkbox"> Vehicle</label>
+            <label><input type="checkbox"> Perion</label>
+            <label><input type="checkbox"> See More</label>
+        </div>
+
+        <h4>Number of Parts</h4>
+        <div class="form-group">
+            <label><input type="radio" name="parts"> 0 - 99</label>
+            <label><input type="radio" name="parts"> 100 - 499</label>
+            <label><input type="radio" name="parts"> 500 - 999</label>
+            <label><input type="radio" name="parts"> 1000+</label>
+        </div>
+
+        <h4>Price</h4>
+        <div class="form-group">
+            <label>Min: <input type="number" min="0" step="1"></label>
+            <label>Max: <input type="number" min="0" step="1"></label>
+        </div>
+
+        <h4>Primary Color</h4>
+        <div class="form-group">
+            <select>
+                <option value="">Select Color</option>
+                <!-- Add more color options -->
+            </select>
+        </div>
+
+        <h4>Secondary Color</h4>
+        <div class="form-group">
+            <select>
+                <option value="">Select Color</option>
+                <!-- Add more color options -->
+            </select>
+        </div>
+    </div>
+
+    <div class="product-grid">
+        <h2>Popular Items</h2>
+        <div class="product-row">
+            <div class="product-card">
+                <img src="~/images/product1.jpg" alt="Product 1">
+                <h3>Ferrari F1 Racer 1:8</h3>
+                <div class="rating">
+                    <span>4</span>
+                    <span>&#9733;</span>
+                </div>
+                <div class="price">$65</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="~/images/product1.jpg" alt="Product 1">
+                <h3>Ferrari F1 Racer 1:8</h3>
+                <div class="rating">
+                    <span>4</span>
+                    <span>&#9733;</span>
+                </div>
+                <div class="price">$65</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="~/images/product1.jpg" alt="Product 1">
+                <h3>Ferrari F1 Racer 1:8</h3>
+                <div class="rating">
+                    <span>4</span>
+                    <span>&#9733;</span>
+                </div>
+                <div class="price">$65</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-row">
+            <div class="product-card">
+                <img src="~/images/product1.jpg" alt="Product 1">
+                <h3>Ferrari F1 Racer 1:8</h3>
+                <div class="rating">
+                    <span>4</span>
+                    <span>&#9733;</span>
+                </div>
+                <div class="price">$65</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="~/images/product1.jpg" alt="Product 1">
+                <h3>Ferrari F1 Racer 1:8</h3>
+                <div class="rating">
+                    <span>4</span>
+                    <span>&#9733;</span>
+                </div>
+                <div class="price">$65</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="~/images/product1.jpg" alt="Product 1">
+                <h3>Ferrari F1 Racer 1:8</h3>
+                <div class="rating">
+                    <span>4</span>
+                    <span>&#9733;</span>
+                </div>
+                <div class="price">$65</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-row">
+            <div class="product-card">
+                <img src="~/images/product1.jpg" alt="Product 1">
+                <h3>Ferrari F1 Racer 1:8</h3>
+                <div class="rating">
+                    <span>4</span>
+                    <span>&#9733;</span>
+                </div>
+                <div class="price">$65</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="~/images/product1.jpg" alt="Product 1">
+                <h3>Ferrari F1 Racer 1:8</h3>
+                <div class="rating">
+                    <span>4</span>
+                    <span>&#9733;</span>
+                </div>
+                <div class="price">$65</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="~/images/product1.jpg" alt="Product 1">
+                <h3>Ferrari F1 Racer 1:8</h3>
+                <div class="rating">
+                    <span>4</span>
+                    <span>&#9733;</span>
+                </div>
+                <div class="price">$65</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Comment: The actual product data will be loaded from the database later -->
+
+        <div class="pagination">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <!-- Add more page numbers -->
+        </div>
+    </div>
 </div>
