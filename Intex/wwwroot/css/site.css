@@ -1,0 +1,82 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    /* Add more styling */
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    color: green;
+    /* Add more styling */
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav li a {
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    /* Add more styling */
+}
+
+.filter-panel {
+    /* Add styling for the filter panel */
+}
+
+.product-section {
+    /* Add styling for the product section */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    /* Add more styling */
+}
+
+.product {
+    /* Add styling for individual products */
+}
+
+    .product img {
+        width: 100%;
+        height: auto;
+        /* Add more styling */
+    }
+
+button {
+    /* Style your buttons */
+}
